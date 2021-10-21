@@ -942,13 +942,15 @@ void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 		&& species != SPECIES_EGG
 		&& hasHM
 		&& HasBadgeToUseFieldMove(FIELD_MOVE_FLY)
-		&& CanMonLearnTMTutor(&mons[slotId], ITEM_HM02_FLY, 0) == CAN_LEARN_MOVE)
+		//&& CanMonLearnTMTutor(&mons[slotId], ITEM_HM02_FLY, 0) == CAN_LEARN_MOVE
+		)
 		#endif
 		{
 			AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_FIELD_MOVES + FIELD_MOVE_FLY);
 			++k;
 		}
 	}
+	
 	/*if (k < MAX_MON_MOVES) //Doesn't know 4 field moves
 	{
 		bool8 hasTM = CheckBagHasItem(ITEM_TM29_DIG, 1) > 0;
@@ -1001,8 +1003,8 @@ static bool8 SetUpFieldMove_Surf(void)
 	item = ITEM_HM03_SURF;
 	#endif
 
-	if (PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING) < PARTY_SIZE
-	&& IsPlayerFacingSurfableFishableWater() == TRUE)
+	if (PartyHasMonWithFieldMovePotential(MOVE_SURF, item, SHOULDNT_BE_SURFING) < PARTY_SIZE && 
+	IsPlayerFacingSurfableFishableWater() == TRUE)
 	{
 		gFieldCallback2 = FieldCallback_PrepareFadeInFromMenu;
 		gPostMenuFieldCallback = FieldCallback_Surf;

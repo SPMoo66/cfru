@@ -2252,7 +2252,7 @@ u8 PartyHasMonWithFieldMovePotential(u16 move, unusedArg u16 item, u8 surfingTyp
 					return i;
 
 				#ifdef ONLY_CHECK_ITEM_FOR_HM_USAGE
-				if (hasHM && CanMonLearnTMTutor(mon, item, 0) == CAN_LEARN_MOVE)
+				if (hasHM /*&& CanMonLearnTMTutor(mon, item, 0) == CAN_LEARN_MOVE*/)
 					return i;
 				#endif
 			}

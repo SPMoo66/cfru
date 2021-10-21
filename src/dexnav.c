@@ -140,11 +140,11 @@ void DexNavGetMon(u16 species, u8 potential, u8 level, u8 ability, u16* moves, u
 	u32 i, otherValue, numChecks, charmBonus, chainBonus, randBonus;
 	otherValue = 0;
 	#ifdef ITEM_SHINY_CHARM
-	charmBonus = (CheckBagHasItem(ITEM_SHINY_CHARM, 1) > 0) ? 2 : 0;
+	charmBonus = (CheckBagHasItem(ITEM_SHINY_CHARM, 1) > 0) ? 7 : 0;
 	#else
 	charmBonus = 0;
 	#endif
-	chainBonus = (chain == 50) ? 5 : (chain == 100) ? 10 : 0;
+	chainBonus = (chain == 15) ? 12 : (chain == 25) ? 24 : 0;
 	randBonus = (Random() % 100 < 4 ? 4 : 0);
 	numChecks = 1 + charmBonus + chainBonus + randBonus;
 
