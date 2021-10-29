@@ -144,7 +144,7 @@ void DexNavGetMon(u16 species, u8 potential, u8 level, u8 ability, u16* moves, u
 	#else
 	charmBonus = 0;
 	#endif
-	chainBonus = (chain == 15) ? 12 : (chain == 25) ? 24 : 0;
+	chainBonus = (chain >= 25) ? 24 : (chain >= 15) ? 12 : 0;
 	randBonus = (Random() % 100 < 4 ? 4 : 0);
 	numChecks = 1 + charmBonus + chainBonus + randBonus;
 
@@ -859,7 +859,7 @@ static void Task_ManageDexNavHUD(u8 taskId)
 
 	if (gMain.newKeys & (B_BUTTON | START_BUTTON))
 	{
-		gCurrentDexNavChain = 0; //A Pokemon running like this resets the chain
+		//gCurrentDexNavChain = 0; //A Pokemon running like this resets the chain
 		DestroyTask(taskId);
 		DexNavFreeHUD();
 		PlaySE(SE_POKENAV_OFF);
