@@ -144,9 +144,9 @@ void DexNavGetMon(u16 species, u8 potential, u8 level, u8 ability, u16* moves, u
 	#else
 	charmBonus = 0;
 	#endif
-	chainBonus = (chain >= 25) ? 24 : (chain >= 15) ? 12 : 0;
+	chainBonus = (chain >= 40) ? 32 : (chain >= 25) ? 24 : (chain >= 15) ? 12 : 0;
 	randBonus = (Random() % 100 < 4 ? 4 : 0);
-	numChecks = 1 + charmBonus + chainBonus + randBonus;
+	numChecks = 5 + charmBonus + chainBonus + randBonus;
 
 	if (searchLevel > 200)
 	{
@@ -1875,7 +1875,7 @@ static bool8 SpeciesInArray(u16 species, u8 indexCount, u8 unownLetter)
 	u16 dexNum = SpeciesToNationalPokedexNum(species);
 
 	//Disallow species not seen
-	if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN))
+/*	if (!GetSetPokedexFlag(dexNum, FLAG_GET_SEEN))
 	{
 		for (int i = 0; i < NUM_LAND_MONS; ++i)
 		{
@@ -1904,7 +1904,7 @@ static bool8 SpeciesInArray(u16 species, u8 indexCount, u8 unownLetter)
 
 		return TRUE;
 	}
-
+*/
 	for (u8 i = 0; i < indexCount; ++i)
 	{
 		if (indexCount == NUM_LAND_MONS)

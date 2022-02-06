@@ -198,9 +198,14 @@ static void SetUpStartMenu_SafariZone(void)
 {
 	AppendToStartMenuItems(STARTMENU_RETIRE_SAFARI);
 
-	if (FlagGet(FLAG_SYS_POKEDEX_GET))
-		AppendToStartMenuItems(STARTMENU_POKEDEX);
+	#ifdef FLAG_SYS_DEXNAV
+	if (FlagGet(FLAG_SYS_DEXNAV) && FlagGet(FLAG_SYS_POKEDEX_GET))
+	#endif
+		AppendToStartMenuItems(STARTMENU_DEXNAV);
 
+/*	if (FlagGet(FLAG_SYS_POKEDEX_GET))
+		AppendToStartMenuItems(STARTMENU_POKEDEX);
+*/
 	#ifdef FLAG_SYS_POKEMON_GET
 	if (FlagGet(FLAG_SYS_POKEMON_GET))
 	#endif

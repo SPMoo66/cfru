@@ -3462,11 +3462,11 @@ u32 CheckShinyMon(struct Pokemon* mon)
 	{
 		#ifdef ITEM_SHINY_CHARM
 		if (CheckBagHasItem(ITEM_SHINY_CHARM, 1) > 0)
-			chance = 8; //Tries an extra two times
+			chance = 8; //Tries an extra 7 times
 		#endif
 
 		if (gFishingByte) //Currently fishing
-			chance += (1 + 2 * MathMin(gFishingStreak, 20)); //Tries an extra 2 times per Pokemon in the streak up to 41 times
+			chance += (1 + 2 * MathMin(gFishingStreak, 20)); //Tries an extra 2 times per Pokemon in the streak up to 49 times
 	}
 
 	if (RandRange(0, 4097) < chance)		//Nominal 1/4096
