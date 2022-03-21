@@ -163,7 +163,7 @@ void DexNavGetMon(u16 species, u8 potential, u8 level, u8 ability, u16* moves, u
 	if (searchLevel > 0)
 		otherValue += searchLevel * 6;
 
-	otherValue /= 100;
+	otherValue /= 10;
 
 	for (i = 0; i < numChecks; ++i)
 	{
