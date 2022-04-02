@@ -96,7 +96,7 @@ static const u32 sStatusFlagsForMoveEffects[] =
 
 const u16 gTrappingMoves[] =
 {
-	MOVE_BIND, MOVE_WRAP, MOVE_FIRESPIN, MOVE_CLAMP, MOVE_WHIRLPOOL, MOVE_SANDTOMB, MOVE_MAGMASTORM, MOVE_INFESTATION, MOVE_SNAPTRAP, MOVE_OCTOLOCK, 0xFFFF
+	MOVE_BIND, MOVE_WRAP, MOVE_FIRESPIN, MOVE_CLAMP, MOVE_WHIRLPOOL, MOVE_SANDTOMB, MOVE_MAGMASTORM, MOVE_INFESTATION, MOVE_SNAPTRAP, MOVE_OCTOLOCK, MOVE_STONEAXE, MOVE_CEASELESSEDGE, 0xFFFF
 };
 
 const u16 gWrappedStringIds[] =
@@ -447,6 +447,12 @@ void SetMoveEffect(bool8 primary, u8 certain)
 							break;
 						case MOVE_SNAPTRAP:
 							gBattleStringLoader = gText_TargetWasCaughtInSnapTrap;
+							break;
+						case MOVE_STONEAXE:
+							gBattleStringLoader = gText_TargetWasInfested;
+							break;
+						case MOVE_CEASELESSEDGE:
+							gBattleStringLoader = gText_TargetWasInfested;
 							break;
 						case MOVE_G_MAX_CENTIFERNO_P:
 						case MOVE_G_MAX_CENTIFERNO_S:

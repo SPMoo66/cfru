@@ -526,6 +526,7 @@ gSheerForceBoostedMoves:
 .hword MOVE_ELECTROWEB
 .hword MOVE_EMBER
 .hword MOVE_ENERGYBALL
+.hword MOVE_ESPERWING
 .hword MOVE_EXTRASENSORY
 .hword MOVE_FAKEOUT
 .hword MOVE_FIERYDANCE
@@ -663,6 +664,7 @@ gRecklessBoostedMoves:
 .hword MOVE_VOLTTACKLE
 .hword MOVE_WOODHAMMER
 .hword MOVE_WILDCHARGE
+.hword MOVE_CHLOROBLAST
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1084,6 +1086,7 @@ gPercent33RecoilMoves:
 .hword MOVE_FLAREBLITZ
 .hword MOVE_BRAVEBIRD
 .hword MOVE_WOODHAMMER
+.hword MOVE_CHLOROBLAST
 .hword MOVE_TABLES_TERMIN
 
 gPercent50RecoilMoves:
