@@ -4889,7 +4889,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_NEEDLEARM] =
 	{
 		.effect = EFFECT_FLINCH_HIT,
-		.power = 60,
+		.power = 75,
 		.type = TYPE_GRASS,
 		.accuracy = 100,
 		.pp = 15,
@@ -6147,7 +6147,7 @@ const struct BattleMove gBattleMoves[] =
 		.effect = EFFECT_SUPERPOWER,
 		.power = 100,
 		.type = TYPE_FIGHTING,
-		.accuracy = 90,
+		.accuracy = 100,
 		.pp = 10,
 		.secondaryEffectChance = 0,
 		.target = MOVE_TARGET_SELECTED,
@@ -6243,7 +6243,7 @@ const struct BattleMove gBattleMoves[] =
 		.effect = EFFECT_ACCURACY_DOWN_HIT,
 		.power = 65,
 		.type = TYPE_GROUND,
-		.accuracy = 85,
+		.accuracy = 90,
 		.pp = 10,
 		.secondaryEffectChance = 30,
 		.target = MOVE_TARGET_SELECTED,
@@ -11801,7 +11801,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_DUALWINGBEAT] =
 	{	//ANIM TODO
 		.effect = EFFECT_DOUBLE_HIT,
-		.power = 40,
+		.power = 45,
 		.type = TYPE_FLYING,
 		.accuracy = 100,
 		.pp = 10,
@@ -11955,6 +11955,118 @@ const struct BattleMove gBattleMoves[] =
 		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
 		.z_move_power = 100,
 		.split = SPLIT_SPECIAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_STONEAXE] =
+	{	//ANIM TODO
+		.effect = EFFECT_TRAP,
+		.power = 40, //PLACEHOLDER DATA
+		.type = TYPE_ROCK,
+		.accuracy = 90,
+		.pp = 15,
+		.secondaryEffectChance = 100,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_CEASELESSEDGE] =
+	{	//ANIM TODO
+		.effect = EFFECT_TRAP,
+		.power = 40, //PLACEHOLDER DATA
+		.type = TYPE_DARK,
+		.accuracy = 90,
+		.pp = 15,
+		.secondaryEffectChance = 100,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_CHLOROBLAST] =
+	{	//ANIM TODO
+		.effect = EFFECT_RECOIL,
+		.power = 120,
+		.type = TYPE_GRASS,
+		.accuracy = 100,
+		.pp = 15,
+		.secondaryEffectChance = 0,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_SPECIAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_ESPERWING] =
+	{	//ANIM TODO
+		.effect = EFFECT_SPEED_UP_1_HIT,
+		.power = 70,
+		.type = TYPE_PSYCHIC,
+		.accuracy = 90,
+		.pp = 10,
+		.secondaryEffectChance = 100,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_HEADLONGRUSH] =
+	{	//ANIM TODO
+		.effect = EFFECT_SUPERPOWER,
+		.power = 120,
+		.type = TYPE_GROUND,
+		.accuracy = 100,
+		.pp = 5,
+		.secondaryEffectChance = 0,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_INFERNALPARADE] =
+	{	//ANIM TODO
+		.effect = EFFECT_BURN_HIT,
+		.power = 80,
+		.type = TYPE_GHOST,
+		.accuracy = 100,
+		.pp = 15,
+		.secondaryEffectChance = 30,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_SPECIAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_RAGINGFURY] =
+	{	//ANIM TODO
+		.effect = EFFECT_RAMPAGE,
+		.power = 120,
+		.type = TYPE_FIRE,
+		.accuracy = 100,
+		.pp = 10,
+		.secondaryEffectChance = 100,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
 		.z_move_effect = 0
 	},
 
@@ -14952,5 +15064,12 @@ const u8 gDynamaxMovePowers[MOVES_COUNT] =
 	[MOVE_FIERYWRATH] = 100,
 	[MOVE_THUNDERCAGE] = 100,
 	[MOVE_DRAGONENERGY] = 100,
+	[MOVE_STONEAXE] = 100,
+	[MOVE_CEASELESSEDGE] = 100,
+	[MOVE_CHLOROBLAST] = 100,
+	[MOVE_ESPERWING] = 100,
+	[MOVE_HEADLONGRUSH] = 100,
+	[MOVE_INFERNALPARADE] = 100,
+	[MOVE_RAGINGFURY] = 100,
 };
 #endif

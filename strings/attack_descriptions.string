@@ -1159,6 +1159,27 @@ A cage made of\nelectricity that traps\nthe target for four\nto five turns.
 #org @DESC_DRAGON_ENERGY
 The higher the\nuser's HP, the\nmore powerful this\nattack becomes.
 
+#org @DESC_STONE_AXE
+The user swings\nstone axes at the\ntarget. Causes\ndamage over time\nand traps the target.
+
+#org @DESC_CEASELESS_EDGE
+The user slashes\na shell blade at the\ntarget. Causes\ndamage over time\nand traps the target.
+
+#org @DESC_CHLOROBLAST
+The user launches its\namassed chlorophyll\nto damage the target.\nThis also damages\nthe user.
+
+#org @DESC_ESPER_WING
+The user slashes the\ntarget with aura-\nenriched wings. This\nalso raises the\nuser's speed.
+
+#org @DESC_HEADLONG_RUSH
+The user smashes into\nthe target in a\nfull-body tackle.\nThis also lowers\nthe user's defenses.
+
+#org @DESC_INFERNAL_PARADE
+The user attacks\nwith a myriad of\nfireballs. This\nmay also inflict\na burn.
+
+#org @DESC_RAGING_FURY
+The user rampages\nin a fiery blaze\nfor two to three\nturns, then becomes\nconfused.
+
 #org @DESC_MAX_GUARD
 Enables the user to\nevade all attacks.\nIt may fail if used\nin succession.
 

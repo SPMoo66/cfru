@@ -777,6 +777,13 @@ gMoveAnimations:
 .word ANIM_FIERY_WRATH
 .word ANIM_THUNDER_CAGE
 .word ANIM_DRAGON_ENERGY
+.word ANIM_STONE_AXE
+.word ANIM_CEASELESS_EDGE
+.word ANIM_CHLOROBLAST
+.word ANIM_ESPER_WING
+.word ANIM_HEADLONG_RUSH
+.word ANIM_INFERNAL_PARADE
+.word ANIM_RAGING_FURY
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_ALL_OUT_PUMMELING
@@ -17167,6 +17174,48 @@ ANIM_THUNDER_CAGE:
 ANIM_DRAGON_ENERGY:
 	goto ANIM_DRAGONPULSE
 	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_STONE_AXE:
+	goto ANIM_INFESTATION
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_CEASELESS_EDGE:
+	goto ANIM_INFESTATION
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_CHLOROBLAST:
+	goto ANIM_LEAFSTORM
+	endanimation 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_ESPER_WING:
+	goto ANIM_HEALPULSE
+	endanimation 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_HEADLONG_RUSH:
+	goto ANIM_HIGHHORSEPOWER
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_INFERNAL_PARADE:
+	goto ANIM_HEX
+	endanimation
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_RAGING_FURY:
+	goto ANIM_FLAMECHARGE
+	endanimation 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .pool

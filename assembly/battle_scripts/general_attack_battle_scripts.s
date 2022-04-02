@@ -3723,6 +3723,7 @@ AquaRingBS:
 .global BS_182_Superpower
 BS_182_Superpower:
 	jumpifhalfword EQUALS CURRENT_MOVE MOVE_CLOSECOMBAT CloseCombatBS
+	jumpifhalfword EQUALS CURRENT_MOVE MOVE_HEADLONGRUSH CloseCombatBS
 	jumpifhalfword EQUALS CURRENT_MOVE MOVE_DRAGONASCENT CloseCombatBS
 	jumpifhalfword EQUALS CURRENT_MOVE MOVE_HAMMERARM HammerArmBS
 	jumpifhalfword EQUALS CURRENT_MOVE MOVE_ICEHAMMER HammerArmBS
