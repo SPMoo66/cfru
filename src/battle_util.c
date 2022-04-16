@@ -1028,6 +1028,20 @@ bool8 CanTransferItem(u16 species, u16 item)
 					return FALSE;
 			}
 			break;
+
+		#ifdef NATIONAL_DEX_ZACIAN
+		case ITEM_EFFECT_RUSTED_SWORD:
+			if (dexNum == NATIONAL_DEX_ZACIAN)
+				return FALSE;
+			break;
+		#endif
+
+		#ifdef NATIONAL_DEX_ZAMAZENTA
+		case ITEM_EFFECT_RUSTED_SHIELD:
+			if (dexNum == NATIONAL_DEX_ZAMAZENTA)
+				return FALSE;
+			break;
+		#endif
 	}
 
 	return TRUE;

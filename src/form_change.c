@@ -470,6 +470,30 @@ void HoldItemFormChange(struct Pokemon* mon, u16 item)
 			}
 			break;
 		#endif
+		
+		#if (defined SPECIES_ZACIAN && defined SPECIES_ZACIAN_CROWNED)
+		case SPECIES_ZACIAN:
+			if (itemEffect == ITEM_EFFECT_RUSTED_SWORD)
+				targetSpecies = SPECIES_ZACIAN_CROWNED;
+			break;
+
+		case SPECIES_ZACIAN_CROWNED:
+			if (itemEffect != ITEM_EFFECT_RUSTED_SWORD)
+				targetSpecies = SPECIES_ZACIAN;
+			break;
+		#endif
+		
+		#if (defined SPECIES_ZAMAZENTA && defined SPECIES_ZAMAZENTA_CROWNED)
+		case SPECIES_ZAMAZENTA:
+			if (itemEffect == ITEM_EFFECT_RUSTED_SHIELD)
+				targetSpecies = SPECIES_ZAMAZENTA_CROWNED;
+			break;
+
+		case SPECIES_ZAMAZENTA_CROWNED:
+			if (itemEffect != ITEM_EFFECT_RUSTED_SHIELD)
+				targetSpecies = SPECIES_ZAMAZENTA;
+			break;
+		#endif
 	}
 
 	if (targetSpecies != SPECIES_NONE && targetSpecies != species)
