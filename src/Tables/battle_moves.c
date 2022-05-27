@@ -1979,14 +1979,14 @@ const struct BattleMove gBattleMoves[] =
 		.effect = EFFECT_HIT,
 		.power = 100,
 		.type = TYPE_NORMAL,
-		.accuracy = 75,
+		.accuracy = 85,
 		.pp = 10,
 		.secondaryEffectChance = 0,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
 		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
 		.z_move_power = 180,
-		.split = SPLIT_PHYSICAL,
+		.split = SPLIT_SPECIAL,
 		.z_move_effect = 0
 	},
 
@@ -5573,7 +5573,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_VOLTTACKLE] =
 	{
 		.effect = EFFECT_PARALYZE_HIT,
-		.power = 120,
+		.power = 130,
 		.type = TYPE_ELECTRIC,
 		.accuracy = 100,
 		.pp = 15,
@@ -6497,7 +6497,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_ZENHEADBUTT] =
 	{
 		.effect = EFFECT_FLINCH_HIT,
-		.power = 80,
+		.power = 90,
 		.type = TYPE_PSYCHIC,
 		.accuracy = 90,
 		.pp = 15,
@@ -6545,7 +6545,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_BULLDOZE] =
 	{
 		.effect = EFFECT_SPEED_DOWN_HIT,
-		.power = 60,
+		.power = 50,
 		.type = TYPE_GROUND,
 		.accuracy = 100,
 		.pp = 20,
@@ -6809,7 +6809,7 @@ const struct BattleMove gBattleMoves[] =
 		.type = TYPE_BUG,
 		.accuracy = 100,
 		.pp = 20,
-		.secondaryEffectChance = 30,
+		.secondaryEffectChance = 0,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
 		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
@@ -6853,7 +6853,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_WILDCHARGE] =
 	{
 		.effect = EFFECT_RECOIL,
-		.power = 90,
+		.power = 120,
 		.type = TYPE_ELECTRIC,
 		.accuracy = 100,
 		.pp = 15,
@@ -7503,7 +7503,7 @@ const struct BattleMove gBattleMoves[] =
 		.effect = EFFECT_ATTACK_DOWN_HIT,
 		.power = 90,
 		.type = TYPE_FAIRY,
-		.accuracy = 90,
+		.accuracy = 100,
 		.pp = 10,
 		.secondaryEffectChance = 10,
 		.target = MOVE_TARGET_SELECTED,
@@ -9525,7 +9525,7 @@ const struct BattleMove gBattleMoves[] =
 	[MOVE_FIRSTIMPRESSION] =
 	{
 		.effect = EFFECT_FAKE_OUT,
-		.power = 90,
+		.power = 100,
 		.type = TYPE_BUG,
 		.accuracy = 100,
 		.pp = 10,
@@ -12018,7 +12018,7 @@ const struct BattleMove gBattleMoves[] =
 		.priority = 0,
 		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
 		.z_move_power = 100,
-		.split = SPLIT_PHYSICAL,
+		.split = SPLIT_SPECIAL,
 		.z_move_effect = 0
 	},
 
@@ -12062,6 +12062,70 @@ const struct BattleMove gBattleMoves[] =
 		.accuracy = 100,
 		.pp = 10,
 		.secondaryEffectChance = 100,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_WAVECRASH] =
+	{
+		.effect = EFFECT_SPEED_UP_1_HIT,
+		.power = 80,
+		.type = TYPE_WATER,
+		.accuracy = 100,
+		.pp = 10,
+		.secondaryEffectChance = 100,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 100,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_PSYSHIELDBASH] =
+	{
+		.effect = EFFECT_DEFENSE_UP_HIT,
+		.power = 70,
+		.type = TYPE_PSYCHIC,
+		.accuracy = 90,
+		.pp = 25,
+		.secondaryEffectChance = 25,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 140,
+		.split = SPLIT_PHYSICAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_BLEAKWINDSTORM] =
+	{
+		.effect = EFFECT_BURN_HIT,
+		.power = 80,
+		.type = TYPE_FLYING,
+		.accuracy = 100,
+		.pp = 15,
+		.secondaryEffectChance = 30,
+		.target = MOVE_TARGET_SELECTED,
+		.priority = 0,
+		.flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+		.z_move_power = 160,
+		.split = SPLIT_SPECIAL,
+		.z_move_effect = 0
+	},
+
+	[MOVE_DIRECLAW] =
+	{
+		.effect = EFFECT_PARALYZE_HIT,
+		.power = 60,
+		.type = TYPE_POISON,
+		.accuracy = 100,
+		.pp = 15,
+		.secondaryEffectChance = 25,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
 		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,

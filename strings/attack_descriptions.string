@@ -1180,6 +1180,18 @@ The user attacks\nwith a myriad of\nfireballs. This\nmay also inflict\na burn.
 #org @DESC_RAGING_FURY
 The user rampages\nin a fiery blaze\nfor two to three\nturns, then becomes\nconfused.
 
+#org @DESC_WAVE_CRASH
+The user shrouds\nitself in water to\nattack. Raises speed\nand causes recoil\ndamage.
+
+#org @DESC_PSYSHIELD_BASH
+The user slams into\nthe target after\ncloaking itself in\npsychic energy.\nMay raise defense.
+
+#org @DESC_BLEAKWIND_STORM
+The user attacks with\nsavage winds that\nmay inflict a\nburn.
+
+#org @DESC_DIRE_CLAW
+A strike with\nruinous claws that\nmay leave the target\npoisoned or\nparalyzed.
+
 #org @DESC_MAX_GUARD
 Enables the user to\nevade all attacks.\nIt may fail if used\nin succession.
 

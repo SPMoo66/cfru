@@ -173,7 +173,17 @@ BS_005_SetFreezeChance:
 .global BS_006_SetParalyzeChance
 BS_006_SetParalyzeChance:
 	setmoveeffect MOVE_EFFECT_PARALYSIS
+	jumpifmove MOVE_DIRECLAW DireClawBS
 	goto BS_STANDARD_HIT
+
+DireClawBS:
+	attackcanceler
+	accuracycheck BS_MOVE_MISSED 0x0
+	call STANDARD_DAMAGE
+	seteffectwithchancetarget
+	setmoveeffect MOVE_EFFECT_POISON
+	seteffectwithchancetarget
+	goto BS_MOVE_FAINT
 
 @;@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 

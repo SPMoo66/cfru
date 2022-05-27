@@ -494,6 +494,7 @@ gSheerForceBoostedMoves:
 .hword MOVE_AURORABEAM
 .hword MOVE_BITE
 .hword MOVE_BLAZEKICK
+.hword MOVE_BLEAKWINDSTORM
 .hword MOVE_BLIZZARD
 .hword MOVE_BLUEFLARE
 .hword MOVE_BODYSLAM
@@ -515,6 +516,7 @@ gSheerForceBoostedMoves:
 .hword MOVE_CRUSHCLAW
 .hword MOVE_DARKPULSE
 .hword MOVE_DIAMONDSTORM
+.hword MOVE_DIRECLAW
 .hword MOVE_DISCHARGE
 .hword MOVE_DIZZYPUNCH
 .hword MOVE_DOUBLEIRONBASH
@@ -592,6 +594,7 @@ gSheerForceBoostedMoves:
 .hword MOVE_POWERUPPUNCH
 .hword MOVE_PSYBEAM
 .hword MOVE_PSYCHIC
+.hword MOVE_PSYSHIELDBASH
 .hword MOVE_PYROBALL
 .hword MOVE_RAZORSHELL
 .hword MOVE_RELICSONG
@@ -643,6 +646,7 @@ gSheerForceBoostedMoves:
 .hword MOVE_VOLTTACKLE
 .hword MOVE_WATERPULSE
 .hword MOVE_WATERFALL
+.hword MOVE_WAVECRASH
 .hword MOVE_ZAPCANNON
 .hword MOVE_ZENHEADBUTT
 .hword MOVE_ZINGZAP
@@ -1020,6 +1024,8 @@ gMovesCanUnfreezeAttacker:
 .hword MOVE_STEAMERUPTION
 .hword MOVE_BURNUP
 .hword MOVE_PYROBALL
+.hword MOVE_INFERNALPARADE
+.hword MOVE_BLEAKWINDSTORM
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1028,6 +1034,8 @@ gMovesCanUnfreezeTarget:
 .hword MOVE_SCALD
 .hword MOVE_STEAMERUPTION
 .hword MOVE_SCORCHINGSANDS
+.hword MOVE_INFERNALPARADE
+.hword MOVE_BLEAKWINDSTORM
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -1087,6 +1095,7 @@ gPercent33RecoilMoves:
 .hword MOVE_BRAVEBIRD
 .hword MOVE_WOODHAMMER
 .hword MOVE_CHLOROBLAST
+.hword MOVE_WAVECRASH
 .hword MOVE_TABLES_TERMIN
 
 gPercent50RecoilMoves:
@@ -1110,6 +1119,7 @@ gIgnoreInAirMoves:
 .hword MOVE_TWISTER
 .hword MOVE_THUNDER
 .hword MOVE_SKYUPPERCUT
+.hword MOVE_BLEAKWINDSTORM
 .hword MOVE_HURRICANE
 .hword MOVE_SMACKDOWN
 .hword MOVE_THOUSANDARROWS

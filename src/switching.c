@@ -1181,7 +1181,8 @@ void PartyMenuSwitchingUpdate(void)
 	int i;
 
 	if (IsOfType(gActiveBattler, TYPE_GHOST)
-	||  ITEM_EFFECT(gActiveBattler) == ITEM_EFFECT_SHED_SHELL)
+	||  ITEM_EFFECT(gActiveBattler) == ITEM_EFFECT_SHED_SHELL
+	||	ABILITY(gActiveBattler) == ABILITY_RUNAWAY)
 		goto SKIP_SWITCH_BLOCKING_CHECK;
 
 	gBattleStruct->switchoutPartyIndex[gActiveBattler] = gBattlerPartyIndexes[gActiveBattler];

@@ -784,6 +784,10 @@ gMoveAnimations:
 .word ANIM_HEADLONG_RUSH
 .word ANIM_INFERNAL_PARADE
 .word ANIM_RAGING_FURY
+.word ANIM_WAVE_CRASH
+.word ANIM_PSYSHIELD_BASH
+.word ANIM_BLEAKWIND_STORM
+.word ANIM_DIRE_CLAW
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_BREAKNECK_BLITZ
 .word ANIM_ALL_OUT_PUMMELING
@@ -17215,6 +17219,30 @@ ANIM_INFERNAL_PARADE:
 .pool
 ANIM_RAGING_FURY:
 	goto ANIM_FLAMECHARGE
+	endanimation 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_WAVE_CRASH:
+	goto 0x81cfa01 @MOVE_SURF
+	endanimation 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_PSYSHIELD_BASH:
+	goto ANIM_ZENHEADBUTT
+	endanimation 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_BLEAKWIND_STORM:
+	goto ANIM_HURRICANE
+	endanimation 
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+.pool
+ANIM_DIRE_CLAW:
+	goto 0x81cc6db @MOVE_CRUSHCLAW
 	endanimation 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

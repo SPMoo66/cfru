@@ -20,12 +20,9 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[2] =
 	{ //Physical Sweeper: Speed Based
 		.nature = NATURE_JOLLY,
-		.ivs = 31,
-		.hpEv = 6,
-		.atkEv = 252,
-		.spdEv = 252,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_Hidden,
 	},
 	[3] =
 	{ //Special Sweeper: Power Based
@@ -110,11 +107,9 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[11] =
 	{ //Physical Wall 
 		.nature = NATURE_BOLD,
-		.ivs = 31,
-		.hpEv = 252,
-		.defEv = 252,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_2,
 	},
 	[12] =
 	{ //Physical Wall 
@@ -137,11 +132,9 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[14] =
 	{ //Special Wall: Less Special Attack
 		.nature = NATURE_CAREFUL,
-		.ivs = 31,
-		.hpEv = 252,
-		.spDefEv = 252,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_1,
 	},
 	[15] =
 	{ //Mixed Attacker: Attack Based, Less Defense
@@ -158,12 +151,8 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	{ //Mixed Attacker: Attack Based, Less Sp. Defense
 		.nature = NATURE_NAUGHTY,
 		.ivs = 31,
-		.hpEv = 6,
-		.atkEv = 128,
-		.spdEv = 252,
-		.spAtkEv = 128,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_Hidden,
 	},
 	[17] =
 	{ //Mixed Attacker: Sp. Attack Based, Less Defense
@@ -201,13 +190,9 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[20] =
 	{ //Mixed Attacker: Speed Based, Less Sp. Defense
 		.nature = NATURE_NAIVE,
-		.ivs = 31,
-		.hpEv = 6,
-		.atkEv = 128,
-		.spdEv = 252,
-		.spAtkEv = 128,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_1,
 	},
 	[21] =
 	{ //Mixed Wall: Defense Based, Less Attack
@@ -256,22 +241,16 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[25] =
 	{ //Fast Wall: HP Based, Less Attack
 		.nature = NATURE_TIMID,
-		.ivs = 31,
-		.hpEv = 252,
-		.spdEv = 252,
-		.spAtkEv = 4,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_Hidden,
 	},
 	[26] =
 	{ //Fast Wall: HP Based, Less Sp. Attack
 		.nature = NATURE_JOLLY,
-		.ivs = 31,
-		.hpEv = 252,
-		.atkEv = 4,
-		.spdEv = 252,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
-		.ability = Ability_Random_1_2,
+		.ability = Ability_2,
 	},
 	[27] =
 	{ //Fast Wall: Defense Based, Less Attack
@@ -1267,6 +1246,201 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 		.spAtkEv = 84,
 		.spdEv = 84,
 		.spDefEv = 84,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[124] =
+	{ //Ability 1
+		.nature = NATURE_HARDY,
+		.ivs = 15,
+		.hpEv = 40,
+		.atkEv = 40,
+		.defEv = 40,
+		.spAtkEv = 40,
+		.spdEv = 40,
+		.spDefEv = 40,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[125] =
+	{ //Ability 2
+		.nature = NATURE_HARDY,
+		.ivs = 15,
+		.hpEv = 40,
+		.atkEv = 40,
+		.defEv = 40,
+		.spAtkEv = 40,
+		.spdEv = 40,
+		.spDefEv = 40,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_2,
+	},
+	[126] =
+	{ //Ability Hidden
+		.nature = NATURE_HARDY,
+		.ivs = 15,
+		.hpEv = 40,
+		.atkEv = 40,
+		.defEv = 40,
+		.spAtkEv = 40,
+		.spdEv = 40,
+		.spDefEv = 40,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[127] =
+	{ //Ability Hidden
+		.nature = NATURE_RELAXED,
+		.ivs = 31,
+		.hpEv = 4,
+		.defEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[128] =
+	{ //Ability Hidden
+		.nature = NATURE_BRAVE,
+		.ivs = 31,
+		.atkEv = 252,
+		.defEv = 124,
+		.spDefEv = 124,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[129] =
+	{ //Ability 1
+		.nature = NATURE_SASSY,
+		.ivs = 31,
+		.hpEv = 4,
+		.defEv = 252,
+		.spDefEv = 252,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[130] =
+	{ //Ability 1
+		.nature = NATURE_BRAVE,
+		.ivs = 15,
+		.atkEv = 128,
+		.defEv = 60,
+		.spDefEv = 60,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[131] =
+	{ //Mixed Wall: Sp. Defense Based, Less Sp. Attack - Ability_1
+		.nature = NATURE_CAREFUL,
+		.ivs = 15,
+		.hpEv = 128,
+		.defEv = 60,
+		.spDefEv = 60,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[132] =
+	{ //Attacker: Attack Based, Less Defense - Ability_1
+		.nature = NATURE_LONELY,
+		.ivs = 15,
+		.atkEv = 128,
+		.spdEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[133] =
+	{ //Bulky Special Attacker - Ability_2
+		.nature = NATURE_MODEST,
+		.ivs = 15,
+		.hpEv = 128,
+		.spAtkEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_2,
+	},
+	[134] =
+	{ //Physical Sweeper: Power Based - Ability_Hidden
+		.nature = NATURE_ADAMANT,
+		.ivs = 15,
+		.atkEv = 128,
+		.spdEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[135] =
+	{ //Mixed Wall: Sp. Defense Based, Less Sp. Attack - Ability_2
+		.nature = NATURE_CAREFUL,
+		.ivs = 15,
+		.hpEv = 128,
+		.defEv = 60,
+		.spDefEv = 60,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_2,
+	},
+	[136] =
+	{ //Mixed Wall: Sp. Defense Based, Less Sp. Attack - Ability_Hidden
+		.nature = NATURE_CAREFUL,
+		.ivs = 15,
+		.hpEv = 128,
+		.defEv = 60,
+		.spDefEv = 60,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[137] =
+	{ 
+		.nature = NATURE_QUIET,
+		.ivs = 15,
+		.hpEv = 128,
+		.spAtkEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_2,
+	},
+	[138] =
+	{ //Special Sweeper: Speed Based - Ability_Hidden
+		.nature = NATURE_TIMID,
+		.ivs = 15,
+		.spdEv = 128,
+		.spAtkEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_Hidden,
+	},
+	[139] =
+	{ //Special Sweeper: Speed Based - Ability_z
+		.nature = NATURE_TIMID,
+		.ivs = 15,
+		.spdEv = 128,
+		.spAtkEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[140] =
+	{ //Special Sweeper: Power Based - Ability_1
+		.nature = NATURE_MODEST,
+		.ivs = 15,
+		.spdEv = 128,
+		.spAtkEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[141] =
+	{ //Physical Sweeper: Speed Based - Ability_1
+		.nature = NATURE_JOLLY,
+		.ivs = 15,
+		.atkEv = 128,
+		.spdEv = 128,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[142] =
+	{ //Ability 1
+		.nature = NATURE_RELAXED,
+		.ivs = 15,
+		.ball = TRAINER_EV_CLASS_BALL,
+		.ability = Ability_1,
+	},
+	[143] =
+	{ //Ability Hidden
+		.nature = NATURE_RELAXED,
+		.ivs = 15,
 		.ball = TRAINER_EV_CLASS_BALL,
 		.ability = Ability_Hidden,
 	},

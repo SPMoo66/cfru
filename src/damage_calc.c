@@ -2288,6 +2288,12 @@ static s32 CalculateBaseDamage(struct DamageCalc* data)
 	&& ((!useMonDef && IsOfType(bankDef, TYPE_ROCK)) || (useMonDef && IsMonOfType(data->monDef, TYPE_ROCK))))
 		data->spDefense = (15 * data->spDefense) / 10;
 
+//Hail Def Increase
+	if (WEATHER_HAS_EFFECT && (gBattleWeather & WEATHER_HAIL_ANY)
+	&& ((!useMonDef && IsOfType(bankDef, TYPE_ICE)) || (useMonDef && IsMonOfType(data->monDef, TYPE_ICE))))
+		data->defense = (125 * data->defense) / 100;
+
+
 //Old Exploding Check
 	#ifdef OLD_EXPLOSION_BOOST
 		if (move == MOVE_SELFDESTRUCT || move == MOVE_EXPLOSION)
