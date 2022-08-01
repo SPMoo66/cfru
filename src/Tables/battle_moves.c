@@ -912,14 +912,14 @@ const struct BattleMove gBattleMoves[] =
 
 	[MOVE_HYDROPUMP] =
 	{
-		.effect = EFFECT_HIT,
+		.effect = EFFECT_DOUBLE_HIT,
 		#ifdef GEN_6_POWER_NERFS
-		.power = 110,
+		.power = 55,
 		#else
-		.power = 120,
+		.power = 60,
 		#endif
 		.type = TYPE_WATER,
-		.accuracy = 80,
+		.accuracy = 85,
 		.pp = 5,
 		.secondaryEffectChance = 0,
 		.target = MOVE_TARGET_SELECTED,
@@ -12125,7 +12125,7 @@ const struct BattleMove gBattleMoves[] =
 		.type = TYPE_POISON,
 		.accuracy = 100,
 		.pp = 15,
-		.secondaryEffectChance = 25,
+		.secondaryEffectChance = 30,
 		.target = MOVE_TARGET_SELECTED,
 		.priority = 0,
 		.flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,

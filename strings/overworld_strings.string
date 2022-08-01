@@ -219,3 +219,25 @@ Purchased
 
 #org @gText_StopZooming
 Stop zooming!
+
+
+#org @gText_WelcomeToHOF
+Welcome to the Hall Of Fame!
+
+#org @gText_NewLineHOF
+\n[SHRINK]
+
+#org @gText_RandomizerModeHOF
+Randomizer 
+
+#org @gText_NuzlockeModeHOF
+Nuzlocke 
+
+#org @gText_ScalingModeHOF
+Scaled 
+
+#org @gText_DoublesModeHOF
+Doubles
+
+#org @gText_ChallengeModeHOF
+Challenge 

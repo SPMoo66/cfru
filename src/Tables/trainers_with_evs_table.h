@@ -1213,7 +1213,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[121] =
 	{ //Ability 1
 		.nature = NATURE_HARDY,
-		.ivs = 15,
+		.ivs = 31,
 		.hpEv = 84,
 		.atkEv = 84,
 		.defEv = 84,
@@ -1226,7 +1226,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[122] =
 	{ //Ability 2
 		.nature = NATURE_HARDY,
-		.ivs = 15,
+		.ivs = 31,
 		.hpEv = 84,
 		.atkEv = 84,
 		.defEv = 84,
@@ -1239,7 +1239,7 @@ const struct TrainersWithEvs gTrainersWithEvsSpreads[] =
 	[123] =
 	{ //Ability Hidden
 		.nature = NATURE_HARDY,
-		.ivs = 15,
+		.ivs = 31,
 		.hpEv = 84,
 		.atkEv = 84,
 		.defEv = 84,

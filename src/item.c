@@ -348,8 +348,7 @@ bool8 CanMonLearnTutorMove(struct Pokemon* mon, u8 tutorId)
 	u16 dexNum = SpeciesToNationalPokedexNum(species);
 	switch (tutorId) {
 		case TUTOR_SPECIAL_DRACO_METEOR:
-			return GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= MAX_FRIENDSHIP
-				&& (gBaseStats[species].type1 == TYPE_DRAGON
+			return (gBaseStats[species].type1 == TYPE_DRAGON
 				 || gBaseStats[species].type2 == TYPE_DRAGON);
 		#ifdef NATIONAL_DEX_KELDEO
 		case TUTOR_SPECIAL_SECRET_SWORD:

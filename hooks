@@ -643,3 +643,5 @@ ActivateMGBAPrint 81E381C 0
 FixInstantTextOptionSpeed 08002D10 0
 RunTextPrintersForInstantTextHook 08002DEE 0
 #endif
+
+HallOfFame_PrintWelcomeText 080F313C 2

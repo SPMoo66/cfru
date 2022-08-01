@@ -3172,3 +3172,52 @@ void SetScrollingListSize(unusedArg u8 taskId)
 	gTasks[taskId].data[4] = 0xC;	//width?
 #endif
 }
+
+extern const u8 gText_WelcomeToHOF[];
+extern const u8 gText_NewLineHOF[];
+extern const u8 gText_RandomizerModeHOF[];
+extern const u8 gText_NuzlockeModeHOF[];
+extern const u8 gText_ScalingModeHOF[];
+extern const u8 gText_DoublesModeHOF[];
+extern const u8 gText_ChallengeModeHOF[];
+
+static const u8 sTextColors[][4] = {
+    { 0, 1, 2 },
+    { 0, 2, 3 },
+    { 4, 5, 0 }
+};
+
+#define gText_EmptyString2 (const u8*) 0x84161cd
+
+void HallOfFame_PrintWelcomeText(u8 not, u8 used)
+{
+	StringCopy(gStringVar1, gText_EmptyString2);
+	StringAppend(gStringVar1, gText_NewLineHOF);
+	if(FlagGet(FLAG_NUZLOCKE_ACTIVE))
+	{
+		StringAppend(gStringVar1, gText_NuzlockeModeHOF);
+	}
+	if(FlagGet(FLAG_CHALLENGE_MODE_ACTIVE))
+	{
+		StringAppend(gStringVar1, gText_ChallengeModeHOF);
+	}
+	if(FlagGet(FLAG_SCALE_TRAINER_LEVELS))
+	{
+		StringAppend(gStringVar1, gText_ScalingModeHOF);
+	}
+	if(!FlagGet(FLAG_RANDOMIZER_ACTIVE))
+	{
+		StringAppend(gStringVar1, gText_RandomizerModeHOF);
+	}
+	if(FlagGet(FLAG_DOUBLE_BATTLE))
+	{
+		StringAppend(gStringVar1, gText_DoublesModeHOF);
+	}
+    u8 x = (0xD0 - GetStringWidth(2, gText_WelcomeToHOF, 0)) / 2;
+	u8 x2 = (0xD0 - GetStringWidth(2, gStringVar1, 0)) / 2;
+    FillWindowPixelBuffer(0, PIXEL_FILL(0));
+    PutWindowTilemap(0);
+    AddTextPrinterParameterized3(0, 2, x, 1, sTextColors[0], 0, gText_WelcomeToHOF);
+	AddTextPrinterParameterized3(0, 2, x2, 4, sTextColors[0], 0, gStringVar1);
+    CopyWindowToVram(0, COPYWIN_BOTH);
+}

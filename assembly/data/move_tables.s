@@ -1077,6 +1077,7 @@ gTwoStrikesMoves:
 .hword MOVE_DUALWINGBEAT
 .hword MOVE_GEARGRIND
 .hword MOVE_TWINEEDLE
+.hword MOVE_HYDROPUMP
 .hword MOVE_TABLES_TERMIN
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

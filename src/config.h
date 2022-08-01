@@ -60,6 +60,9 @@
 #define FLAG_FAST_BATTLE_MESSAGES 0x925 //When set, battle messages have no wait time once they've completed printing
 #define FLAG_FOLLOWER_IGNORE_ACTIVE_SCRIPT 0x926 //If set, the follower will reappear and move even when a script is in progress
 #define FLAG_KEEP_CONSUMABLE_ITEMS 0x927 //If set, consumable items are returned after battles
+#define FLAG_NUZLOCKE_ACTIVE 0xA05 //If set, nuzlocke mode is active
+#define FLAG_RANDOMIZER_ACTIVE 0xA06 //If set, randomizer mode is active
+#define FLAG_CHALLENGE_MODE_ACTIVE 0xA0C //If set, challenge mode is active
 #define FLAG_DAILY_EVENTS_START 0xE00 //To flag + 0xFF, resets every new day.
 
 /*===== Start Menu/Poketools Flags =====*/
