@@ -3205,7 +3205,7 @@ void HallOfFame_PrintWelcomeText(u8 not, u8 used)
 	{
 		StringAppend(gStringVar1, gText_ScalingModeHOF);
 	}
-	if(!FlagGet(FLAG_RANDOMIZER_ACTIVE))
+	if(FlagGet(FLAG_RANDOMIZER_ACTIVE))
 	{
 		StringAppend(gStringVar1, gText_RandomizerModeHOF);
 	}
